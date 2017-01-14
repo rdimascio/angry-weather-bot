@@ -55,13 +55,4 @@ Twitter.stream('statuses/filter', {track: '#angryweatherbot'}, function(stream) 
 
 });
 
-  setInterval(function() {
-  try {
-    run();
-  }
-  catch (e) {
-    console.log(e);
-  }
-}, 60000* 60);
-
 });
