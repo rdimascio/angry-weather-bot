@@ -2,10 +2,10 @@
 var TwitterPackage = require('twitter');
 
 var secret = {
-  consumer_key: 'Rwb9XLEI1IepiKGFHOAaJLIuz',
-  consumer_secret: 'DrWWt7Yk0w0v49Os41TixSCN6pcnPtvSS85ieGb8IambkmFao2',
-  access_token_key: '819789708876124162-tCYxnTWibQ7yB1hsWZWArD6qjTN39de',
-  access_token_secret: 'ECNtZJc1wYmJMBA6AocB4mX0YGAGFIhPcMtul9DeXKPo4'
+  consumer_key: process.env.TWITTER_CONSUMER_KEY,
+  consumer_secret: process.env.TWITTER_CONSUMER_SECRET,
+  access_token_key: process.env.TWITTER_ACCESS_TOKEN_KEY,
+  access_token_secret: process.env.TWITTER_ACCESS_TOKEN_SECRET
 }
 
 var Twitter = new TwitterPackage(secret);
@@ -54,5 +54,14 @@ Twitter.stream('statuses/filter', {track: '#angryweatherbot'}, function(stream) 
     console.log(error);
 
 });
+
+  setInterval(function() {
+  try {
+    run();
+  }
+  catch (e) {
+    console.log(e);
+  }
+}, 60000* 60);
 
 });
