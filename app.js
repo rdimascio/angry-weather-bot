@@ -15,11 +15,18 @@ var Response = [
   'why don\'t you look out a fucking window',
   'I hope you realize you could have googled "weather" in half the time it took you to tweet me',
   'just get off your ass and go look outside',
-  'sorry, can\'t, just crashed',
+  'sorry, can\'t, just crashed *powers down*',
   'that\'s what they made Google for bro',
   'what do I look like, the fucking weather man?',
   'idk, why don\'t you tell me',
-  'I could tell you, but I don\'t really feel like it'
+  'I could tell you, but I don\'t really feel like it',
+  'BEEP. BOOP. BEEP.',
+  'at least you\'re not in Cleveland',
+  'Computing...... SYSTEM ERROR: Say pretty please',
+  'IT\'S RAINING!',
+  'u wot m8?',
+  'ask me again',
+  'DOWN FOR MAINTENANCE. lol jk',
 ];
 
 //Randomize the responses
