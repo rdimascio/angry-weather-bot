@@ -26,7 +26,7 @@ var Response = [
   'IT\'S RAINING!',
   'u wot m8?',
   'ask me again',
-  'DOWN FOR MAINTENANCE. lol jk',
+  'DOWN FOR MAINTENANCE. lol jk'
 ];
 
 //Randomize the responses
